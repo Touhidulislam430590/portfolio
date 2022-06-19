@@ -1,0 +1,30 @@
+{% extends '../index.html' %}
+{% load static %}
+
+{% block title %}
+    home
+{% endblock %}
+
+
+{% block content %}
+    <div class="mx-5">
+        <div class="text-center">
+            <img src="{% static 'images/touhid.jpg' %}" alt="profileImage" class="img-thumbnail mt-5" width="250px" height="150px">
+        </div>
+
+        <div class="">
+            <h1 class="text text-white">Hello</h1>
+            <p class="text-white about" style="text-indent:100px;">
+                Lorem natus perferendis quaerat quam quo ratione sed unde vel veritatis vitae voluptatibus. Accusamus aperiam aspernatur autem commodi ex exercitationem expedita maiores obcaecati sapiente vitae! Ducimus nisi numquam totam.
+            </p>
+            <p class="text-white about" style="text-indent:50px;">
+                is velit! obcaecati sapiente vitae! Ducimus nisi numquam totam.
+            </p>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-outline-warning my-3 mr-5" href="{% url 'contact' %}">Hire Me</a>
+            <a class="btn btn-outline-info my-3" href="{% url 'contact' %}">Contact</a>
+        </div>
+    </div>
+
+{% endblock %}

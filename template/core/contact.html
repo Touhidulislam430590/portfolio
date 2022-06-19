@@ -1,0 +1,59 @@
+{% extends '../index.html' %}
+{% load static %}
+
+{% block title %}
+    portfolio | contact
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-warning border-bottom mx-3 mt-5">Contact</h1>
+
+        <h4 class="mt-5 text-white">Feel free to ask me anything.</h4>
+
+        <div class="row">
+            <div class="col-sm-9">
+                <form class="row g-3 text-white" action="" method="post">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-3 text-center mt-3">
+                <ul class="text-white" style="list-style: none">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-3x text-success"></i>
+                        <p> Barisal, Bangladesh</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt fa-3x text-success"></i><i class=""></i>
+                        <p> +880 1717 430590</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope fa-3x text-success"></i>
+                        <p>sanon.touhid980@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
